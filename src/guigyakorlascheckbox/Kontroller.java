@@ -16,7 +16,7 @@ public class Kontroller {
         chb.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                throw new UnsupportedOperationException("Not supported yet.");
+                System.out.println("Kattintás event: actionPerformed");
             }
         });
     }
