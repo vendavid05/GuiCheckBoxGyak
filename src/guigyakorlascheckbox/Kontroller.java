@@ -1,14 +1,25 @@
 
 package guigyakorlascheckbox;
 
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import javax.swing.JCheckBox;
+
 
 public class Kontroller {
-    public static void main(String args[]) {
+    private Nezet nezet;
 
-        java.awt.EventQueue.invokeLater(new Runnable() {
-            public void run() {
-                new NewJFrame().setVisible(true);
+    public Kontroller(Nezet nezet) {
+        this.nezet = nezet;
+        
+        JCheckBox chb = nezet.getChb();
+        chb.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                throw new UnsupportedOperationException("Not supported yet.");
             }
         });
     }
+    
+    
 }
